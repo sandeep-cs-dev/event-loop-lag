@@ -1,0 +1,14 @@
+{
+  "name": "event-loop-lag-nodejs-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodejs-dashboard -- node -r nodejs-dashboard app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodejs-dashboard": "^0.5.1"
+  }
+}
