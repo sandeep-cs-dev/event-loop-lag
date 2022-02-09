@@ -5,9 +5,10 @@ const app = express();
 const http = require('http');
 const server = http.createServer(app);
 
+const MIN = 2;
+const MAX = 1e5; 
+
 app.get('/test',(req,res)=>{
- const MIN = 2;
- const MAX = 1e5; 
  console.time("total-execution-time");
  generatePrimes(MIN,MAX); 
  res.status(200).send({msg:"ok"});
